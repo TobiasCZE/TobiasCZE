@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GoPresso HQ — Performance Dashboard</title>
+<style>
+:root{--bg:#0d0f12;--panel:#15181d;--line:#292d34;--text:#f5f5f5;--muted:#9ba1aa;--green:#1fd17a;--blue:#4da3ff;--purple:#b06cff;--yellow:#e6b84a;--brown:#6b432d}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -20%,#26201c 0,#0d0f12 45%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.wrap{max-width:1450px;margin:auto;padding:28px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}.brand{display:flex;gap:14px;align-items:center}.logo{font-size:34px}.brand h1{margin:0;font-size:24px}.brand p{margin:3px 0;color:var(--muted)}.date{background:#15181d;border:1px solid var(--line);padding:12px 16px;border-radius:14px;color:#ddd}
+.notice{border:1px solid #63452f;background:linear-gradient(100deg,#2b201a,#17181a);border-radius:16px;padding:18px 22px;margin-bottom:22px;display:flex;justify-content:space-between;gap:20px}.notice strong{font-size:18px}.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:18px;background:var(--panel);padding:22px;box-shadow:0 12px 30px #0003}.kpi{min-height:160px}.kpi.green{background:linear-gradient(145deg,#073d2b,#10241d);border-color:#125e42}.kpi.blue{background:linear-gradient(145deg,#0a3159,#111d2b);border-color:#175187}.kpi.purple{background:linear-gradient(145deg,#32164e,#201a2a);border-color:#59337a}.kpi.yellow{background:linear-gradient(145deg,#4b390d,#211d12);border-color:#765b14}.label{color:#d8dbe0;font-weight:700;letter-spacing:.04em}.value{font-size:34px;font-weight:800;margin:18px 0 6px}.icon{font-size:22px}.section{margin-top:22px}.section h2{font-size:20px;margin:0 0 12px}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.six{display:grid;grid-template-columns:repeat(6,1fr);gap:0}.metric{padding:16px;border-right:1px solid var(--line)}.metric:last-child{border-right:0}.metric .n{font-size:23px;font-weight:800;margin-top:6px}.table{width:100%;border-collapse:collapse}.table th,.table td{padding:12px;border-bottom:1px solid var(--line);text-align:right}.table th:first-child,.table td:first-child{text-align:left}.table th{color:var(--muted);font-weight:600}.pill{display:inline-block;padding:5px 9px;border-radius:999px;background:#193b2d;color:#73e4ad;font-size:12px}.footer{margin-top:22px;text-align:right;color:var(--muted);font-size:12px}@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.three{grid-template-columns:1fr}.six{grid-template-columns:repeat(2,1fr)}.top{align-items:flex-start;flex-direction:column;gap:14px}}@media(max-width:560px){.wrap{padding:14px}.grid{grid-template-columns:1fr}.value{font-size:29px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><div class="brand"><div class="logo">☕</div><div><h1>GoPresso HQ</h1><p>Performance Dashboard</p></div></div><div class="date">📅 16. 9. 2026 – 22. 9. 2026</div></header>
+<div class="notice"><div>📊 <strong>Zobrazeny výsledky za poslední kompletní den: 22. 9. 2026</strong><div class="muted">Dnešní neúplná data se do hlavních KPI nezapočítávají.</div></div><div class="muted">🔄 Sync každých 12 h</div></div>
+<section class="grid">
+<div class="card kpi green"><div class="label">💵 TRŽBY</div><div class="value">0 Kč</div><div class="muted">22. 9. 2026</div></div>
+<div class="card kpi blue"><div class="label">🛒 OBJEDNÁVKY</div><div class="value">0</div><div class="muted">22. 9. 2026</div></div>
+<div class="card kpi purple"><div class="label">👥 NÁVŠTĚVY</div><div class="value">106</div><div class="muted">22. 9. 2026</div></div>
+<div class="card kpi yellow"><div class="label">📈 KONVERZNÍ POMĚR</div><div class="value">0 %</div><div class="muted">22. 9. 2026</div></div>
+</section>
+<section class="section"><h2>📊 Přehled za posledních 7 dní <span class="muted">16.–22. 9. 2026</span></h2>
+<div class="card six">
+<div class="metric"><div class="muted">Tržby</div><div class="n">11 498 Kč</div></div><div class="metric"><div class="muted">Objednávky</div><div class="n">6</div></div><div class="metric"><div class="muted">Návštěvy</div><div class="n">1 075</div></div><div class="metric"><div class="muted">ATC</div><div class="n">37</div></div><div class="metric"><div class="muted">Checkout</div><div class="n">21</div></div><div class="metric"><div class="muted">Konverze</div><div class="n">0,56 %</div></div>
+</div></section>
+<section class="section"><div class="three"><div class="card"><h2>🛍️ Shopify</h2><p class="muted">Objednávky a tržby</p><h2>11 498 Kč</h2><p>6 objednávek · 37 ATC · 21 checkoutů</p></div><div class="card"><h2>📣 Meta Ads</h2><p class="muted">16.–22. 9. 2026</p><h2>465 Kč spend</h2><p>2 256 impresí · 14 kliknutí · CTR 0,62 %</p></div><div class="card"><h2>🎯 Funnel</h2><p class="muted">Posledních 7 dní</p><h2>37 → 21 → 6</h2><p>ATC → checkout → objednávky</p></div></div></section>
+<section class="section"><div class="card"><h2>📈 Denní vývoj</h2><table class="table"><thead><tr><th>Den</th><th>Návštěvy</th><th>ATC</th><th>Checkout</th><th>Objednávky</th><th>Tržby</th></tr></thead><tbody>
+<tr><td>16. 9.</td><td>149</td><td>7</td><td>6</td><td>1</td><td>2 088 Kč</td></tr><tr><td>17. 9.</td><td>293</td><td>7</td><td>2</td><td>2</td><td>4 838 Kč</td></tr><tr><td>18. 9.</td><td>131</td><td>5</td><td>3</td><td>2</td><td>2 529 Kč</td></tr><tr><td>19. 9.</td><td>115</td><td>3</td><td>2</td><td>0</td><td>0 Kč</td></tr><tr><td>20. 9.</td><td>127</td><td>3</td><td>4</td><td>1</td><td>2 043 Kč</td></tr><tr><td>21. 9.</td><td>154</td><td>3</td><td>0</td><td>0</td><td>0 Kč</td></tr><tr><td>22. 9.</td><td>106</td><td>6</td><td>4</td><td>0</td><td>0 Kč</td></tr>
+</tbody></table></div></section>
+<section class="section"><div class="card"><h2>📣 Reklamní výkon · Meta Ads</h2><div class="six"><div class="metric"><div class="muted">Spend</div><div class="n">465 Kč</div></div><div class="metric"><div class="muted">Imprese</div><div class="n">2 256</div></div><div class="metric"><div class="muted">Kliknutí</div><div class="n">14</div></div><div class="metric"><div class="muted">CTR</div><div class="n">0,62 %</div></div><div class="metric"><div class="muted">CPC</div><div class="n">33,19 Kč</div></div><div class="metric"><div class="muted">CPM</div><div class="n">206,59 Kč</div></div></div></div></section>
+<div class="footer">Last sync: 23. 9. 2026 · GoPresso HQ</div>
+</div></body></html>
